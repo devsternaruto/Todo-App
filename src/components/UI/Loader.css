@@ -1,0 +1,14 @@
+.loaderWrapper  {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.loaderWrapper.absolute {
+    position: absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%, 10px);
+    z-index: 2;
+}

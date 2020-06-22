@@ -1,0 +1,231 @@
+a:-webkit-any-link:active,
+a:visited  {
+  color:inherit;
+}
+
+a {
+  text-decoration: none;  
+}
+
+body {
+  background-color: #fff !important;
+}
+
+.container {
+  margin-top:40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.todoCheckbox.Mui-checked + .MuiFormControlLabel-label{
+  text-decoration: line-through;
+  color:#9c9c9c;
+}
+
+.actions-wrapper {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.actions-wrapper .MuiFormControl-root {
+  width:100%;
+}
+
+.paginationWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px; 
+  flex-direction: column;
+}
+
+.paginationCountWrap {
+  display: flex;
+  align-items: center;
+}
+
+.rowsPerPageSelectWrapper {
+  min-width: 50px !important;
+}
+
+.rowsPerPageWrap{
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.rowsPerPageSelect {
+  margin:0;
+  min-width: 45px;
+}
+
+.todo-list {
+  margin-top:20px;
+  position: relative;
+}
+
+label + .MuiInput-formControl.rowsPerPageSelect {
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.strike-thru {
+  text-decoration: line-through;
+}
+
+.task-edit-icons-wrapper {
+  display:flex;
+  align-items: flex-end
+}
+
+.task-edit-icons-wrapper .MuiIconButton-root{
+  padding-bottom: 0;
+}
+
+.avatar-wrapper {
+  position: relative;
+}
+
+.avatar-wrapper input[type="file"]{
+  display:none;
+}
+
+.avatar-img-wrap {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border-radius: 10%;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:solid 1px #9c9c9c;
+  
+}
+
+.defaultAvatar {
+  background:#3f51b5;
+}
+
+.avatar-img-wrap img {
+  object-fit: cover;
+  width: 160px;
+  height: 160px;
+}
+
+.avatar-name {
+  font-size: 84px;
+  color:white;
+}
+
+
+.avatar-label {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  color: white;
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  display:none;
+  padding: 6px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.avatar-img-wrap:hover .avatar-label,
+.avatar-img-wrap:hover .remove-label {
+  display:block;
+}
+
+.profile-form {
+  margin-top:40px;
+}
+
+.profile-form .submit-btn {
+  margin-top: 30px;
+}
+
+.profile-form .input-fields {
+  margin-bottom:15px;
+}
+
+.profile-form .input-fields:last-of-type {
+  margin-bottom:0;
+}
+
+.toolbar a {
+  font-size: 16px;
+}
+
+.appbar .avatar-img-wrap,
+.appbar .avatar-img-wrap img  {
+  width: 42px;
+  height: 42px;
+  border-color: transparent;
+}
+
+.appbar .avatar-img-wrap .avatar-name {
+  font-size: 18px;
+}
+
+.avatar-img-wrap .remove-label{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: white;
+  padding: 6px;
+  border-radius: 10%;
+  background: rgba(0,0,0,0.5);
+  cursor: pointer;
+  display: none;
+}
+.deleteAccountModalContent .btns-group {
+  text-align: right;
+  margin-top: 20px;
+}
+.deleteAccountModalContent .btns-group button {
+  margin-right: 15px;
+}
+
+.deleteAccountModalContent .btns-group button:last-child {
+  margin-right: 0;
+}
+
+.lead-landing-page {
+  font-size: 21px;
+}
+
+.frame-container {
+  display:flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width : 640px) {
+  .actions-wrapper {
+    flex-direction: row;;
+  }
+
+  .paginationWrap {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .paginationWrap .rowsPerPageWrap {
+    margin-bottom: 0;
+  }
+
+  .actions-wrapper .MuiFormControl-root {
+    width:auto;
+  }
+}
+
+
